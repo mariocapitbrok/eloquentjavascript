@@ -11,8 +11,6 @@ const drawChessboard = (size = 8) => {
     }
     board += '\n'
   }
-
-  return board
 }
 
 const result = drawChessboard(8)
