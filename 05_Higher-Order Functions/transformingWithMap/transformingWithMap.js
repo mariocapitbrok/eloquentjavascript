@@ -1,0 +1,15 @@
+const SCRIPTS = require('./data/scripts')
+
+function map(array, transform) {
+  let mapped = []
+  for (let element of array) {
+    mapped.push(transform(element))
+  }
+  return mapped
+}
+
+let rtlScripts = SCRIPTS.filter(s => s.direction == 'rtl')
+console.log(map(rtlScripts, s => s.name))
+// → ["Adlam", "Arabic", "Imperial Aramaic", …]
+
+// Like forEach and filter, map is a standard array method.
