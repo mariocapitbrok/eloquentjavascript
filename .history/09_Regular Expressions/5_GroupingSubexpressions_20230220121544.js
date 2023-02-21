@@ -1,0 +1,1 @@
+// To use an operator like * or + on more than one element at a time, you have to use parentheses. A part of a regular expression that is enclosed in parentheses counts as a single element as far as the operators following it are concerned.
